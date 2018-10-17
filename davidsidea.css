@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+input {
+  width: 30%;
+}
+
+.btn {
+  font-size: 20px;
+  width: 25%;
+  border-radius: 20px;
+  background-color: rgba(254, 8, 101, 1);
+}
+
+#main {
+  animation: fadeOut 2s;
+}
+
+#logo {
+  width: 30%;
+  height: auto;
+  border-radius: 160px;
+  padding: 10px;
+}
+
+#footer {
+  /*animation: 2s ease 0s 1 slideUpFromBottom;*/
+}
+
+@keyframes slideUpFromBottom {
+	0% {
+	  transform: translateY(0);
+	}
+	100% {
+	  transform: translateY(-230%);
+	}
+}
+
+
+#bottom {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  z-index: 2;
+  position: relative;
+  transition: slow 3s;
+}

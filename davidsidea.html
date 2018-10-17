@@ -5,41 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Women in Comdedy Layout Example 1</title>
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="shortcut icon" href="images/wiccolorlogo.png">
     <link rel="stylesheet" href="davidsidea.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 <body>
-    <div class='container'>
+    <div class='container' id='main'>
         <div class='row'>
             <div class='col-sm-12'>
-                <img class="img img-thumbnail thumbnail" src="assets/images/headshot.jpg" alt="David Scherer-ODell">
-                <h1>Women in Comedy</h1>
+                <img class="img" id='logo' src="images/wiccolorlogo.png" alt="Women in Comedy Logo">
+                <h1>Women in <span style='color: rgba(254, 8, 101, 1);'>Com</span><span style='color: rgba(209, 13, 13, 1);'>edy</span></h1>
             </div>
         </div>
-    </div>
 
-    <div class='container'>
         <div class='row'>
             <div class='col-sm-12'>
                 <form>
-                    Username:<br>
-                    <input type="text" name="username"><br>
-                    Password:<br>
-                    <input type="text" name="password"><br>
-                    <button class='btn btn-primary'>Enter</button>
+                    <label>Username:</label><br>
+                    <input type="text" name="username" placeholder='Username'><br><br>
+                    <label>Password:</label><br>
+                    <input type="text" name="password" placeholder='Password'><br><br>
+                    <button class='btn'>Enter</button>
                 </form>
-                <a href="#"><p>Create Account</p></a>
+                <a href="#"><h3>Create Account</h3></a>
             </div>
         </div>
     </div>
 
-    <div class='container'>
+    <div class='container' id='footer'>
         <div class='row'>
-            <div class='column'>
-                <img class="img img-thumbnail thumbnail" src="assets/images/headshot.jpg" alt="David Scherer-ODell">
+            <div class='col-lg-12'>
+                <img class="img" id='bottom' src="images/women_curl_color_edited.png" alt="Women of Variety" style='image-size: cover;'>
             </div>
         </div>
     </div>
 </body>
+<script>
+  $('.btn').on('click', function(event) {
+    event.prevendefault;
+    $('#footer').animate({animation: '2s ease 0s 1 slideUpFromBottom'});
+    $('#main').fadeOut('slow');
+
+  });
+</script>
 </html>
